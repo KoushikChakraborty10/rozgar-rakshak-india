@@ -1,0 +1,1678 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0f3d3e">
+  <meta name="color-scheme" content="light dark">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="RozgarRakshak India is a privacy-first job and internship offer risk checker for Indian job seekers. Check red flags before applying, paying, or sharing documents.">
+  <meta name="keywords" content="India job scam checker, internship scam, fake job offer, work from home scam, job safety India, fresher job verification">
+  <meta name="author" content="RozgarRakshak India">
+
+  <meta property="og:title" content="RozgarRakshak India - Job Offer Risk Checker">
+  <meta property="og:description" content="Check whether a job, internship, work-from-home, apprenticeship, or overseas offer looks risky before you trust it.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:site_name" content="RozgarRakshak India">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="RozgarRakshak India">
+  <meta name="twitter:description" content="A privacy-first job and internship offer risk checker for Indian job seekers.">
+
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; frame-ancestors 'none'; img-src 'self' data:; style-src 'self' 'nonce-rozgar-rakshak-static'; script-src 'self' 'nonce-rozgar-rakshak-static'; connect-src 'none'; upgrade-insecure-requests">
+
+  <title>RozgarRakshak India - Job Offer Risk Checker</title>
+
+  <style nonce="rozgar-rakshak-static">
+    :root {
+      --bg: #f7fbf8;
+      --surface: #ffffff;
+      --surface-soft: #eef8f4;
+      --text: #10201f;
+      --muted: #526260;
+      --line: #d9e7e2;
+      --brand: #0f3d3e;
+      --brand-2: #13795b;
+      --accent: #f5b642;
+      --danger: #b42318;
+      --danger-bg: #fff1f0;
+      --warn: #9a5b00;
+      --warn-bg: #fff8e6;
+      --safe: #166534;
+      --safe-bg: #ecfdf3;
+      --focus: #1d7afc;
+      --shadow: 0 20px 60px rgba(15, 61, 62, 0.12);
+      --radius: 22px;
+      --radius-sm: 14px;
+      --max: 1180px;
+      --tap: 44px;
+      --font: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #071211;
+        --surface: #0d1b1a;
+        --surface-soft: #102725;
+        --text: #effaf7;
+        --muted: #b6c9c4;
+        --line: #26413d;
+        --brand: #7ee0c2;
+        --brand-2: #7ee0c2;
+        --accent: #ffd36e;
+        --danger: #ffb4ab;
+        --danger-bg: #3a1110;
+        --warn: #ffd28a;
+        --warn-bg: #33230a;
+        --safe: #9be7b2;
+        --safe-bg: #10291a;
+        --focus: #8ec7ff;
+        --shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      text-size-adjust: 100%;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font);
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(19, 121, 91, 0.16), transparent 34rem),
+        radial-gradient(circle at top right, rgba(245, 182, 66, 0.18), transparent 30rem),
+        var(--bg);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--brand-2);
+      text-decoration-thickness: 0.1em;
+      text-underline-offset: 0.2em;
+    }
+
+    a:hover {
+      text-decoration-thickness: 0.16em;
+    }
+
+    button,
+    input,
+    select,
+    textarea {
+      font: inherit;
+    }
+
+    button,
+    select,
+    input[type="checkbox"] {
+      cursor: pointer;
+    }
+
+    img,
+    svg {
+      max-width: 100%;
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+      border-radius: 10px;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: 1rem;
+      top: -10rem;
+      z-index: 50;
+      background: var(--surface);
+      color: var(--text);
+      padding: 0.8rem 1rem;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      box-shadow: var(--shadow);
+    }
+
+    .skip-link:focus {
+      top: 1rem;
+    }
+
+    .container {
+      width: min(calc(100% - 2rem), var(--max));
+      margin-inline: auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(18px);
+      background: color-mix(in srgb, var(--bg) 82%, transparent);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.7rem;
+      min-width: 0;
+      font-weight: 850;
+      letter-spacing: -0.03em;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .logo {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      flex: 0 0 auto;
+      border-radius: 14px;
+      color: #fff;
+      background: linear-gradient(135deg, #0f3d3e, #13795b);
+      box-shadow: 0 10px 25px rgba(15, 61, 62, 0.25);
+    }
+
+    .brand span:last-child {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .nav-links a {
+      min-height: 40px;
+      display: inline-flex;
+      align-items: center;
+      padding: 0.45rem 0.75rem;
+      border-radius: 999px;
+      color: var(--muted);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.92rem;
+    }
+
+    .nav-links a:hover,
+    .nav-links a:focus-visible {
+      color: var(--text);
+      background: var(--surface-soft);
+    }
+
+    main {
+      overflow: clip;
+    }
+
+    .hero {
+      padding: clamp(2.5rem, 7vw, 6.5rem) 0 2rem;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(310px, 0.8fr);
+      gap: clamp(1.2rem, 4vw, 3rem);
+      align-items: center;
+    }
+
+    .eyebrow {
+      width: fit-content;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.45rem 0.75rem;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--surface);
+      color: var(--muted);
+      font-weight: 800;
+      font-size: 0.9rem;
+    }
+
+    h1,
+    h2,
+    h3 {
+      line-height: 1.12;
+      letter-spacing: -0.04em;
+      margin: 0;
+    }
+
+    h1 {
+      margin-top: 1rem;
+      font-size: clamp(2.15rem, 6vw, 5.2rem);
+      max-width: 12ch;
+    }
+
+    .hero p {
+      max-width: 68ch;
+      color: var(--muted);
+      font-size: clamp(1rem, 1.7vw, 1.18rem);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-top: 1.5rem;
+    }
+
+    .btn {
+      min-height: var(--tap);
+      border: 0;
+      border-radius: 999px;
+      padding: 0.78rem 1rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      text-decoration: none;
+      font-weight: 850;
+      transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+    }
+
+    .btn-primary {
+      color: #fff;
+      background: linear-gradient(135deg, #0f3d3e, #13795b);
+      box-shadow: 0 14px 30px rgba(15, 61, 62, 0.22);
+    }
+
+    .btn-secondary {
+      color: var(--text);
+      background: var(--surface);
+      border: 1px solid var(--line);
+    }
+
+    .btn-danger {
+      color: #fff;
+      background: #b42318;
+    }
+
+    .trust-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: clamp(1rem, 3vw, 1.5rem);
+    }
+
+    .score-preview {
+      display: grid;
+      gap: 0.9rem;
+    }
+
+    .preview-row {
+      display: grid;
+      grid-template-columns: 42px 1fr;
+      gap: 0.8rem;
+      align-items: start;
+      padding: 0.9rem;
+      background: var(--surface-soft);
+      border-radius: 16px;
+      border: 1px solid var(--line);
+    }
+
+    .icon-box {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 14px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      font-size: 1.2rem;
+    }
+
+    .preview-row strong {
+      display: block;
+      line-height: 1.25;
+    }
+
+    .preview-row span {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .section {
+      padding: clamp(2.2rem, 6vw, 5rem) 0;
+    }
+
+    .section-title {
+      display: grid;
+      gap: 0.7rem;
+      max-width: 760px;
+      margin-bottom: 1.3rem;
+    }
+
+    .section-title p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    h2 {
+      font-size: clamp(1.7rem, 4vw, 3rem);
+    }
+
+    h3 {
+      font-size: clamp(1.1rem, 2vw, 1.4rem);
+    }
+
+    .checker-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(320px, 0.85fr);
+      gap: 1rem;
+      align-items: start;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: clamp(1rem, 2.6vw, 1.5rem);
+    }
+
+    .form-grid {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .field {
+      display: grid;
+      gap: 0.38rem;
+    }
+
+    label,
+    legend {
+      font-weight: 850;
+      color: var(--text);
+    }
+
+    .help {
+      color: var(--muted);
+      font-size: 0.92rem;
+      margin: 0;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+      width: 100%;
+      min-height: var(--tap);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--surface);
+      color: var(--text);
+      padding: 0.78rem 0.85rem;
+    }
+
+    textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+
+    fieldset {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 1rem;
+      margin: 0;
+    }
+
+    .check-grid {
+      display: grid;
+      gap: 0.55rem;
+      margin-top: 0.65rem;
+    }
+
+    .check-item {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 0.6rem;
+      align-items: start;
+      padding: 0.65rem;
+      border-radius: 12px;
+      background: var(--surface-soft);
+    }
+
+    input[type="checkbox"] {
+      width: 1.2rem;
+      height: 1.2rem;
+      margin-top: 0.18rem;
+      accent-color: var(--brand-2);
+    }
+
+    .result-panel {
+      position: sticky;
+      top: 92px;
+      display: grid;
+      gap: 1rem;
+    }
+
+    .risk-box {
+      display: grid;
+      gap: 0.8rem;
+      padding: 1rem;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--line);
+      background: var(--surface-soft);
+    }
+
+    .risk-box.safe {
+      background: var(--safe-bg);
+      border-color: color-mix(in srgb, var(--safe) 45%, var(--line));
+    }
+
+    .risk-box.caution {
+      background: var(--warn-bg);
+      border-color: color-mix(in srgb, var(--warn) 45%, var(--line));
+    }
+
+    .risk-box.danger {
+      background: var(--danger-bg);
+      border-color: color-mix(in srgb, var(--danger) 45%, var(--line));
+    }
+
+    .risk-topline {
+      display: flex;
+      justify-content: space-between;
+      gap: 0.8rem;
+      align-items: center;
+    }
+
+    .risk-label {
+      font-size: clamp(1.25rem, 3vw, 2rem);
+      font-weight: 900;
+      letter-spacing: -0.04em;
+    }
+
+    .score-pill {
+      min-width: 78px;
+      text-align: center;
+      padding: 0.45rem 0.7rem;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: var(--surface);
+      font-weight: 900;
+    }
+
+    .meter {
+      height: 12px;
+      background: color-mix(in srgb, var(--line), transparent 25%);
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .meter-fill {
+      height: 100%;
+      width: 0%;
+      border-radius: inherit;
+      background: linear-gradient(90deg, var(--safe), var(--accent), #b42318);
+      transition: width 0.35s ease;
+    }
+
+    .result-list {
+      margin: 0;
+      padding-left: 1.25rem;
+      color: var(--muted);
+    }
+
+    .result-list li + li {
+      margin-top: 0.35rem;
+    }
+
+    .actions-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+
+    .small-btn {
+      min-height: 40px;
+      border: 1px solid var(--line);
+      background: var(--surface);
+      color: var(--text);
+      border-radius: 999px;
+      padding: 0.6rem 0.8rem;
+      font-weight: 800;
+    }
+
+    .small-btn:hover {
+      background: var(--surface-soft);
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+
+    .mini-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      padding: 1rem;
+    }
+
+    .mini-card p {
+      color: var(--muted);
+      margin-bottom: 0;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.35rem 0.55rem;
+      border-radius: 999px;
+      background: var(--surface-soft);
+      border: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.86rem;
+      font-weight: 800;
+      margin-bottom: 0.7rem;
+    }
+
+    .library-controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-bottom: 1rem;
+    }
+
+    .filter-btn {
+      border: 1px solid var(--line);
+      background: var(--surface);
+      color: var(--text);
+      min-height: 40px;
+      padding: 0.55rem 0.75rem;
+      border-radius: 999px;
+      font-weight: 800;
+    }
+
+    .filter-btn[aria-pressed="true"] {
+      color: #fff;
+      border-color: transparent;
+      background: linear-gradient(135deg, #0f3d3e, #13795b);
+    }
+
+    .scam-list {
+      display: grid;
+      gap: 0.8rem;
+    }
+
+    .scam-item {
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      background: var(--surface);
+      padding: 1rem;
+    }
+
+    .scam-item[hidden] {
+      display: none;
+    }
+
+    .resource-list {
+      display: grid;
+      gap: 0.7rem;
+    }
+
+    .resource-link {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 0.8rem;
+      align-items: center;
+      text-decoration: none;
+      color: var(--text);
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 0.9rem;
+    }
+
+    .resource-link:hover {
+      background: var(--surface-soft);
+    }
+
+    .resource-link span {
+      color: var(--muted);
+      display: block;
+      font-size: 0.92rem;
+      margin-top: 0.15rem;
+    }
+
+    details {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: var(--surface);
+      padding: 0.2rem 1rem;
+    }
+
+    details + details {
+      margin-top: 0.7rem;
+    }
+
+    summary {
+      cursor: pointer;
+      min-height: 48px;
+      display: flex;
+      align-items: center;
+      font-weight: 850;
+    }
+
+    details p,
+    details ul {
+      color: var(--muted);
+    }
+
+    .notice {
+      border-left: 5px solid var(--accent);
+      background: var(--surface);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 1rem;
+      color: var(--muted);
+    }
+
+    .footer {
+      padding: 2rem 0;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+    }
+
+    .footer-grid {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .status {
+      min-height: 1.4rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+    }
+
+    @media (max-width: 900px) {
+      .hero-grid,
+      .checker-layout,
+      .grid-2,
+      .grid-3 {
+        grid-template-columns: 1fr;
+      }
+
+      .result-panel {
+        position: static;
+      }
+
+      .nav {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 0.75rem 0;
+      }
+
+      .nav-links {
+        width: 100%;
+        justify-content: flex-start;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .container {
+        width: min(calc(100% - 1rem), var(--max));
+      }
+
+      .hero {
+        padding-top: 1.5rem;
+      }
+
+      .hero-actions,
+      .actions-row,
+      .library-controls {
+        flex-direction: column;
+      }
+
+      .btn,
+      .small-btn,
+      .filter-btn {
+        width: 100%;
+      }
+
+      .risk-topline {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .resource-link {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 310px) {
+      :root {
+        --tap: 42px;
+      }
+
+      body {
+        font-size: 0.92rem;
+      }
+
+      .logo {
+        width: 34px;
+        height: 34px;
+        border-radius: 10px;
+      }
+
+      .brand span:last-child {
+        font-size: 0.92rem;
+      }
+
+      .nav-links a {
+        padding-inline: 0.55rem;
+        font-size: 0.85rem;
+      }
+
+      h1 {
+        font-size: 1.72rem;
+      }
+
+      .eyebrow,
+      .tag {
+        font-size: 0.78rem;
+      }
+
+      .card,
+      .trust-card,
+      .mini-card,
+      .scam-item {
+        padding: 0.75rem;
+        border-radius: 14px;
+      }
+    }
+
+    @media (min-width: 1400px) {
+      :root {
+        --max: 1280px;
+      }
+
+      body {
+        font-size: 1.04rem;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        transition: none !important;
+        animation: none !important;
+      }
+    }
+
+    @media print {
+      header,
+      .hero-actions,
+      .library-controls,
+      .actions-row,
+      .footer {
+        display: none !important;
+      }
+
+      body {
+        background: #fff;
+        color: #000;
+      }
+
+      .card,
+      .mini-card,
+      .trust-card,
+      .scam-item,
+      .resource-link,
+      details {
+        box-shadow: none;
+        border-color: #bbb;
+      }
+
+      a {
+        color: #000;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header aria-label="Site header">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="RozgarRakshak India home">
+        <span class="logo" aria-hidden="true">RR</span>
+        <span>RozgarRakshak India</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#checker">Risk Checker</a>
+        <a href="#scams">Scam Library</a>
+        <a href="#resources">Official Links</a>
+        <a href="#privacy">Privacy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="top" class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">🇮🇳 Job safety tool for Indian job seekers</div>
+          <h1>Check before you trust a job offer.</h1>
+          <p>
+            Paste or describe a job, internship, work-from-home, apprenticeship, or overseas offer.
+            This browser-only tool checks common red flags and gives safer next steps.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#checker">Start free risk check</a>
+            <a class="btn btn-secondary" href="#report">Already paid money?</a>
+          </div>
+
+          <p class="help">
+            No login. No cookies. No tracking. Your input is processed on your device only.
+          </p>
+        </div>
+
+        <aside class="trust-card" aria-label="Website highlights">
+          <div class="score-preview">
+            <div class="preview-row">
+              <span class="icon-box" aria-hidden="true">₹</span>
+              <div>
+                <strong>Fee warning</strong>
+                <span>Detects registration, security deposit, training-fee, and document-fee risks.</span>
+              </div>
+            </div>
+
+            <div class="preview-row">
+              <span class="icon-box" aria-hidden="true">🛡️</span>
+              <div>
+                <strong>Privacy-first</strong>
+                <span>No backend, no database, no analytics, and no hidden data collection.</span>
+              </div>
+            </div>
+
+            <div class="preview-row">
+              <span class="icon-box" aria-hidden="true">✅</span>
+              <div>
+                <strong>Practical next steps</strong>
+                <span>Gives verification steps, safer links, and reporting guidance.</span>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="checker" class="section" aria-labelledby="checker-title">
+      <div class="container">
+        <div class="section-title">
+          <h2 id="checker-title">Job Offer Risk Checker</h2>
+          <p>
+            This is not a government verification service. It is a practical red-flag checker to help you slow down,
+            verify, and avoid preventable mistakes.
+          </p>
+        </div>
+
+        <div class="checker-layout">
+          <form id="riskForm" class="card" novalidate>
+            <div class="form-grid">
+              <div class="field">
+                <label for="offerText">Paste or describe the offer</label>
+                <textarea id="offerText" name="offerText" maxlength="2500" placeholder="Example: Company name, job title, salary, message received, fee asked, email/phone, interview process, joining date..."></textarea>
+                <p class="help">
+                  Avoid entering Aadhaar number, PAN number, bank details, OTP, passwords, or full address.
+                  <span id="charCount">0</span>/2500 characters.
+                </p>
+              </div>
+
+              <div class="grid-2">
+                <div class="field">
+                  <label for="jobType">Offer type</label>
+                  <select id="jobType" name="jobType">
+                    <option value="fresher">Fresher job</option>
+                    <option value="internship">Internship</option>
+                    <option value="wfh">Work from home / online task</option>
+                    <option value="apprenticeship">Apprenticeship / trainee</option>
+                    <option value="overseas">Overseas job</option>
+                    <option value="government">Government job / exam</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div class="field">
+                  <label for="source">Where did you find it?</label>
+                  <select id="source" name="source">
+                    <option value="official">Official company/government website</option>
+                    <option value="known">Known job portal or campus placement</option>
+                    <option value="linkedin">LinkedIn or professional network</option>
+                    <option value="whatsapp">WhatsApp / Telegram / SMS</option>
+                    <option value="social">Instagram / Facebook / random social post</option>
+                    <option value="unknown">Unknown source</option>
+                  </select>
+                </div>
+              </div>
+
+              <fieldset>
+                <legend>Red flags you noticed</legend>
+                <p class="help">Select everything that applies.</p>
+
+                <div class="check-grid">
+                  <label class="check-item">
+                    <input type="checkbox" name="flags" value="fee">
+                    <span>They asked for registration, security, training, laptop, document, or interview fee.</span>
+                  </label>
+
+                  <label class="check-item">
+                    <input type="checkbox" name="flags" value="otp">
+                    <span>They asked for OTP, UPI PIN, password, bank login, or remote screen access.</span>
+                  </label>
+
+                  <label class="check-item">
+                    <input type="checkbox" name="flags" value="tooGood">
+                    <span>The salary or earning promise looks too good for the skill/experience required.</span>
+                  </label>
+
+                  <label class="check-item">
+                    <input type="checkbox" name="flags" value="urgent">
+                    <span>They are creating urgency: “pay today”, “limited seats”, “joining tomorrow”.</span>
+                  </label>
+
+                  <label class="check-item">
+                    <input type="checkbox" name="flags" value="unofficialEmail">
+                    <span>The recruiter uses Gmail/Yahoo/Outlook or suspicious domain instead of an official domain.</span>
+                  </label>
+
+                  <label class="check-item">
+                    <input type="checkbox" name="flags" value="noInterview">
+                    <span>No proper interview, no official offer process, or only chat-based selection.</span>
+                  </label>
+
+                  <label class="check-item">
+                    <input type="checkbox" name="flags" value="documents">
+                    <span>They want Aadhaar, PAN, bank details, photos, or certificates before proper verification.</span>
+                  </label>
+
+                  <label class="check-item">
+                    <input type="checkbox" name="flags" value="overseasVisa">
+                    <span>For overseas job, they promise visa/ticket quickly but ask processing money first.</span>
+                  </label>
+                </div>
+              </fieldset>
+
+              <div class="actions-row">
+                <button class="btn btn-primary" type="submit">Analyze offer</button>
+                <button class="btn btn-secondary" type="reset">Clear form</button>
+              </div>
+
+              <p class="status" id="formStatus" role="status" aria-live="polite"></p>
+            </div>
+          </form>
+
+          <aside class="result-panel" aria-labelledby="result-title">
+            <div class="card">
+              <h3 id="result-title">Your risk result</h3>
+
+              <div id="riskBox" class="risk-box" aria-live="polite">
+                <div class="risk-topline">
+                  <span id="riskLabel" class="risk-label">Not checked yet</span>
+                  <span id="scorePill" class="score-pill">0/100</span>
+                </div>
+
+                <div class="meter" aria-label="Risk meter">
+                  <div id="meterFill" class="meter-fill"></div>
+                </div>
+
+                <p id="riskSummary" class="help">
+                  Fill the form and click “Analyze offer” to get a red-flag based safety result.
+                </p>
+              </div>
+
+              <h3>Detected issues</h3>
+              <ul id="issueList" class="result-list">
+                <li>No analysis yet.</li>
+              </ul>
+
+              <h3>Recommended next steps</h3>
+              <ul id="stepList" class="result-list">
+                <li>Do not pay money or share sensitive documents until you verify the offer.</li>
+              </ul>
+
+              <div class="actions-row">
+                <button id="copyResult" class="small-btn" type="button">Copy result</button>
+                <button id="printResult" class="small-btn" type="button">Print / Save PDF</button>
+              </div>
+
+              <p id="copyStatus" class="status" role="status" aria-live="polite"></p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="how-title">
+      <div class="container">
+        <div class="section-title">
+          <h2 id="how-title">How this website helps</h2>
+          <p>Simple guidance for people who are new to job hunting and may not know how fake offers usually look.</p>
+        </div>
+
+        <div class="grid-3">
+          <article class="mini-card">
+            <span class="tag">Step 1</span>
+            <h3>Understand the risk</h3>
+            <p>See whether the offer looks low risk, suspicious, or high risk based on common Indian scam patterns.</p>
+          </article>
+
+          <article class="mini-card">
+            <span class="tag">Step 2</span>
+            <h3>Verify safely</h3>
+            <p>Check the company career page, official email domain, employer identity, interview process, and fee demand.</p>
+          </article>
+
+          <article class="mini-card">
+            <span class="tag">Step 3</span>
+            <h3>Take action</h3>
+            <p>If you already paid or shared sensitive data, follow the reporting and damage-control steps immediately.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="scams" class="section" aria-labelledby="scam-title">
+      <div class="container">
+        <div class="section-title">
+          <h2 id="scam-title">India-focused scam pattern library</h2>
+          <p>Filter common patterns and learn what to check before trusting an opportunity.</p>
+        </div>
+
+        <div class="library-controls" role="toolbar" aria-label="Scam category filters">
+          <button class="filter-btn" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-btn" type="button" data-filter="fee" aria-pressed="false">Fee scams</button>
+          <button class="filter-btn" type="button" data-filter="wfh" aria-pressed="false">Work-from-home</button>
+          <button class="filter-btn" type="button" data-filter="overseas" aria-pressed="false">Overseas</button>
+          <button class="filter-btn" type="button" data-filter="data" aria-pressed="false">Data theft</button>
+        </div>
+
+        <div class="scam-list">
+          <article class="scam-item" data-category="fee">
+            <span class="tag">Fee scam</span>
+            <h3>Registration or security deposit before joining</h3>
+            <p>
+              Be careful if a recruiter asks for money to “confirm” your job, release an offer letter,
+              arrange an interview, provide a laptop, or create an employee ID.
+            </p>
+          </article>
+
+          <article class="scam-item" data-category="wfh">
+            <span class="tag">Work-from-home</span>
+            <h3>Typing, CAPTCHA, review, like-and-earn, or task-based jobs</h3>
+            <p>
+              High daily income for very simple online tasks is a major warning sign, especially when they later ask
+              for recharge, tax, wallet unlock, or withdrawal fees.
+            </p>
+          </article>
+
+          <article class="scam-item" data-category="data">
+            <span class="tag">Data theft</span>
+            <h3>Early demand for Aadhaar, PAN, bank details, OTP, or remote access</h3>
+            <p>
+              A genuine employer may need documents later in a formal process, but you should not share sensitive
+              details before verifying the employer and offer.
+            </p>
+          </article>
+
+          <article class="scam-item" data-category="overseas">
+            <span class="tag">Overseas</span>
+            <h3>Fast visa, free ticket, and guaranteed foreign job after payment</h3>
+            <p>
+              Overseas hiring has strict processes. Be extra cautious if someone promises visa sponsorship quickly
+              but asks for processing money through personal UPI or bank accounts.
+            </p>
+          </article>
+
+          <article class="scam-item" data-category="fee">
+            <span class="tag">Fake appointment</span>
+            <h3>Offer letter without interview or from an unofficial email</h3>
+            <p>
+              Fake offer letters often copy logos and use urgent payment language. Always check the official career
+              page, domain name, and recruiter identity independently.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="resources" class="section" aria-labelledby="resources-title">
+      <div class="container">
+        <div class="section-title">
+          <h2 id="resources-title">Official and safer starting points</h2>
+          <p>Use these links as starting points. Always verify the URL and avoid paying unofficial middlemen.</p>
+        </div>
+
+        <div class="resource-list">
+          <a class="resource-link" href="https://www.ncs.gov.in/" target="_blank" rel="noopener noreferrer">
+            <strong>National Career Service, Government of India <span>Official jobseeker and employer platform.</span></strong>
+            <span aria-hidden="true">↗</span>
+          </a>
+
+          <a class="resource-link" href="https://www.apprenticeshipindia.gov.in/" target="_blank" rel="noopener noreferrer">
+            <strong>Apprenticeship India <span>Official apprenticeship opportunities and employer listings.</span></strong>
+            <span aria-hidden="true">↗</span>
+          </a>
+
+          <a class="resource-link" href="https://nats.education.gov.in/" target="_blank" rel="noopener noreferrer">
+            <strong>National Apprenticeship Training Scheme <span>Apprenticeship information for students and graduates.</span></strong>
+            <span aria-hidden="true">↗</span>
+          </a>
+
+          <a class="resource-link" href="https://www.pminternship.mca.gov.in/" target="_blank" rel="noopener noreferrer">
+            <strong>PM Internship Scheme <span>Official internship-related portal. Check eligibility and current status.</span></strong>
+            <span aria-hidden="true">↗</span>
+          </a>
+
+          <a class="resource-link" href="https://cybercrime.gov.in/" target="_blank" rel="noopener noreferrer">
+            <strong>National Cyber Crime Reporting Portal <span>Report cyber fraud, job scam payments, and online cheating.</span></strong>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="report" class="section" aria-labelledby="report-title">
+      <div class="container">
+        <div class="section-title">
+          <h2 id="report-title">Already paid money or shared data?</h2>
+          <p>Act quickly. These steps are general safety guidance, not legal advice.</p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>Immediate steps</h3>
+            <ul>
+              <li>Do not pay more money, even if they threaten account blocking, police action, or legal notice.</li>
+              <li>Save screenshots, phone numbers, UPI IDs, bank account details, emails, receipts, and chat history.</li>
+              <li>Contact your bank or UPI app support immediately and ask about freezing or disputing the transaction.</li>
+              <li>Call India’s cyber fraud helpline <strong>1930</strong> if money was lost online.</li>
+              <li>File a complaint on the official cybercrime portal.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>If documents were shared</h3>
+            <ul>
+              <li>Watch for loan, SIM, bank, or identity misuse alerts.</li>
+              <li>Do not share OTPs or video KYC links with unknown people.</li>
+              <li>Change passwords if you shared login details or allowed screen sharing.</li>
+              <li>Inform family members so they do not respond to follow-up threats.</li>
+              <li>Consider speaking to a qualified legal professional for serious identity misuse.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="privacy" class="section" aria-labelledby="privacy-title">
+      <div class="container">
+        <div class="section-title">
+          <h2 id="privacy-title">Privacy, security, and lawful-use notice</h2>
+          <p>This website is designed for safe static hosting and minimal data handling.</p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>Privacy promise</h3>
+            <ul>
+              <li>No cookies.</li>
+              <li>No ads.</li>
+              <li>No analytics.</li>
+              <li>No fingerprinting.</li>
+              <li>No backend database.</li>
+              <li>Your checker input is processed inside your browser only.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Realistic limitations</h3>
+            <ul>
+              <li>A static website cannot confirm in real time whether a specific company or recruiter is genuine.</li>
+              <li>It cannot replace police, bank, legal, government, or professional career advice.</li>
+              <li>GitHub Pages provides HTTPS hosting, but the site owner must still keep the repository secure.</li>
+              <li>If future versions collect data, handle payments, or provide professional advice, get legal review.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="notice">
+          <strong>Lawful-use disclaimer:</strong>
+          This website is for awareness and lawful self-protection only. It should not be used to harass, defame,
+          impersonate, illegally investigate, or publicly accuse any person or organisation. For final India legal
+          compliance, consult a qualified legal professional if you operate this commercially, collect user data,
+          sell services, handle payments, or provide professional advice.
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-title">
+          <h2 id="faq-title">Frequently asked questions</h2>
+        </div>
+
+        <details>
+          <summary>Can this website tell me with 100% certainty whether a job is fake?</summary>
+          <p>
+            No. It checks risk signs and gives safer next steps. Final verification should be done through official
+            company websites, official government portals, trusted placement cells, banks, cybercrime authorities, or
+            qualified professionals.
+          </p>
+        </details>
+
+        <details>
+          <summary>Does the website store my job offer text?</summary>
+          <p>
+            No. This version does not send or store your input anywhere. It runs locally in your browser and forgets the
+            text when you clear the form or close the page.
+          </p>
+        </details>
+
+        <details>
+          <summary>Should I ever pay money to get a job?</summary>
+          <p>
+            Be extremely careful. Genuine employers usually do not ask candidates to pay registration, interview,
+            security, laptop, document, or joining fees through personal accounts. Verify independently before paying
+            anyone.
+          </p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <p>© <span id="year"></span> RozgarRakshak India. Built as a privacy-first public awareness tool.</p>
+      <p><a href="#top">Back to top</a></p>
+    </div>
+  </footer>
+
+  <script nonce="rozgar-rakshak-static">
+    (() => {
+      "use strict";
+
+      const form = document.getElementById("riskForm");
+      const offerText = document.getElementById("offerText");
+      const charCount = document.getElementById("charCount");
+      const formStatus = document.getElementById("formStatus");
+
+      const riskBox = document.getElementById("riskBox");
+      const riskLabel = document.getElementById("riskLabel");
+      const scorePill = document.getElementById("scorePill");
+      const meterFill = document.getElementById("meterFill");
+      const riskSummary = document.getElementById("riskSummary");
+      const issueList = document.getElementById("issueList");
+      const stepList = document.getElementById("stepList");
+      const copyResult = document.getElementById("copyResult");
+      const printResult = document.getElementById("printResult");
+      const copyStatus = document.getElementById("copyStatus");
+      const year = document.getElementById("year");
+
+      const flagWeights = {
+        fee: 28,
+        otp: 35,
+        tooGood: 16,
+        urgent: 14,
+        unofficialEmail: 13,
+        noInterview: 15,
+        documents: 18,
+        overseasVisa: 24
+      };
+
+      const flagMessages = {
+        fee: "Money is being requested before or during the hiring process.",
+        otp: "OTP, UPI PIN, password, bank login, or remote access request is highly dangerous.",
+        tooGood: "The earning promise looks unusually high for the required skill or experience.",
+        urgent: "The recruiter is creating pressure to act before proper verification.",
+        unofficialEmail: "The recruiter email or domain does not look like an official company channel.",
+        noInterview: "The offer process does not include a proper interview or official verification.",
+        documents: "Sensitive documents are being requested too early.",
+        overseasVisa: "The overseas visa or ticket promise is linked with upfront payment."
+      };
+
+      const sourceWeights = {
+        official: -8,
+        known: -4,
+        linkedin: 4,
+        whatsapp: 15,
+        social: 15,
+        unknown: 18
+      };
+
+      const typeWeights = {
+        fresher: 4,
+        internship: 5,
+        wfh: 12,
+        apprenticeship: 3,
+        overseas: 14,
+        government: 10,
+        other: 6
+      };
+
+      const suspiciousPatterns = [
+        { pattern: /registration fee|security deposit|refundable fee|interview fee|joining fee|training fee|document fee|processing fee/i, score: 18, message: "The description includes a fee-related phrase." },
+        { pattern: /upi|paytm|phonepe|gpay|google pay|qr code|wallet/i, score: 10, message: "The description mentions UPI, wallet, or QR payment." },
+        { pattern: /otp|pin|password|anydesk|teamviewer|screen share|remote access/i, score: 25, message: "The description mentions OTP, password, screen sharing, or remote access." },
+        { pattern: /earn.*per day|daily income|work 1 hour|no skill|required no experience|guaranteed income/i, score: 12, message: "The description contains unrealistic easy-income language." },
+        { pattern: /limited seats|urgent|today only|pay now|last chance|immediate joining/i, score: 10, message: "The description creates urgency." },
+        { pattern: /visa.*fee|ticket.*fee|abroad job|overseas placement|work permit.*payment/i, score: 18, message: "The description contains overseas placement payment risk." },
+        { pattern: /gmail\.com|yahoo\.com|outlook\.com|hotmail\.com/i, score: 8, message: "The description includes a free email domain." }
+      ];
+
+      let latestResultText = "No result generated yet.";
+
+      function setYear() {
+        if (year) {
+          year.textContent = String(new Date().getFullYear());
+        }
+      }
+
+      function clearList(list) {
+        while (list.firstChild) {
+          list.removeChild(list.firstChild);
+        }
+      }
+
+      function appendListItem(list, text) {
+        const li = document.createElement("li");
+        li.textContent = text;
+        list.appendChild(li);
+      }
+
+      function getSelectedFlags() {
+        const checked = form.querySelectorAll('input[name="flags"]:checked');
+        return Array.from(checked).map((item) => item.value);
+      }
+
+      function clampScore(score) {
+        return Math.max(0, Math.min(100, Math.round(score)));
+      }
+
+      function getBand(score) {
+        if (score >= 70) {
+          return {
+            label: "High risk",
+            className: "danger",
+            summary: "Do not pay money, do not share sensitive documents, and verify through official channels first."
+          };
+        }
+
+        if (score >= 38) {
+          return {
+            label: "Caution",
+            className: "caution",
+            summary: "Several warning signs may be present. Slow down and verify the employer before continuing."
+          };
+        }
+
+        return {
+          label: "Lower risk",
+          className: "safe",
+          summary: "No major red flags were detected, but still verify the offer through official sources before trusting it."
+        };
+      }
+
+      function analyzeText(text) {
+        const matches = [];
+        let score = 0;
+
+        suspiciousPatterns.forEach((item) => {
+          if (item.pattern.test(text)) {
+            score += item.score;
+            matches.push(item.message);
+          }
+        });
+
+        return { score, matches };
+      }
+
+      function buildNextSteps(score, selectedFlags) {
+        const steps = [
+          "Search the company name plus “careers” and verify the opening on the official website.",
+          "Check whether the recruiter email domain matches the company’s official domain.",
+          "Speak to your college placement cell, a trusted senior, or a knowledgeable family member before paying or sharing documents."
+        ];
+
+        if (selectedFlags.includes("fee")) {
+          steps.unshift("Do not pay registration, security, training, laptop, interview, or document fees.");
+        }
+
+        if (selectedFlags.includes("otp")) {
+          steps.unshift("Do not share OTP, UPI PIN, passwords, bank login details, or remote screen access.");
+        }
+
+        if (selectedFlags.includes("documents")) {
+          steps.push("Share Aadhaar, PAN, bank details, and certificates only after the employer is verified and the process is formal.");
+        }
+
+        if (selectedFlags.includes("overseasVisa")) {
+          steps.push("For overseas jobs, verify the employer, agent registration, visa process, contract, and fees through official channels.");
+        }
+
+        if (score >= 70) {
+          steps.unshift("Treat this as unsafe until independently verified. Stop communication if they pressure you.");
+          steps.push("If you lost money online, call 1930 and report on cybercrime.gov.in as soon as possible.");
+        }
+
+        return steps;
+      }
+
+      function updateResult(score, issues, steps) {
+        const band = getBand(score);
+
+        riskBox.classList.remove("safe", "caution", "danger");
+        riskBox.classList.add(band.className);
+
+        riskLabel.textContent = band.label;
+        scorePill.textContent = `${score}/100`;
+        meterFill.style.width = `${score}%`;
+        riskSummary.textContent = band.summary;
+
+        clearList(issueList);
+        if (issues.length === 0) {
+          appendListItem(issueList, "No strong red flag selected or detected. Still verify before trusting the offer.");
+        } else {
+          issues.forEach((issue) => appendListItem(issueList, issue));
+        }
+
+        clearList(stepList);
+        steps.forEach((step) => appendListItem(stepList, step));
+
+        latestResultText = [
+          "RozgarRakshak India - Job Offer Risk Result",
+          `Risk level: ${band.label}`,
+          `Score: ${score}/100`,
+          "",
+          "Detected issues:",
+          ...(issues.length ? issues.map((issue) => `- ${issue}`) : ["- No strong red flag selected or detected."]),
+          "",
+          "Recommended next steps:",
+          ...steps.map((step) => `- ${step}`),
+          "",
+          "Reminder: This is a red-flag checker, not a final verification service or legal advice."
+        ].join("\n");
+      }
+
+      function analyzeOffer(event) {
+        event.preventDefault();
+
+        const formData = new FormData(form);
+        const jobType = String(formData.get("jobType") || "other");
+        const source = String(formData.get("source") || "unknown");
+        const selectedFlags = getSelectedFlags();
+        const text = offerText.value.trim();
+
+        let score = 8;
+        const issues = [];
+
+        score += sourceWeights[source] || 0;
+        score += typeWeights[jobType] || 0;
+
+        selectedFlags.forEach((flag) => {
+          score += flagWeights[flag] || 0;
+          if (flagMessages[flag]) {
+            issues.push(flagMessages[flag]);
+          }
+        });
+
+        const textResult = analyzeText(text);
+        score += textResult.score;
+        textResult.matches.forEach((message) => {
+          if (!issues.includes(message)) {
+            issues.push(message);
+          }
+        });
+
+        if (text.length < 40) {
+          score += 5;
+          issues.push("The offer description is very short, so the result may be incomplete.");
+        }
+
+        const finalScore = clampScore(score);
+        const steps = buildNextSteps(finalScore, selectedFlags);
+
+        updateResult(finalScore, issues, steps);
+        formStatus.textContent = "Analysis complete. Review the risk result and next steps.";
+      }
+
+      function resetResult() {
+        riskBox.classList.remove("safe", "caution", "danger");
+        riskLabel.textContent = "Not checked yet";
+        scorePill.textContent = "0/100";
+        meterFill.style.width = "0%";
+        riskSummary.textContent = "Fill the form and click “Analyze offer” to get a red-flag based safety result.";
+
+        clearList(issueList);
+        appendListItem(issueList, "No analysis yet.");
+
+        clearList(stepList);
+        appendListItem(stepList, "Do not pay money or share sensitive documents until you verify the offer.");
+
+        latestResultText = "No result generated yet.";
+        formStatus.textContent = "Form cleared.";
+        copyStatus.textContent = "";
+        charCount.textContent = "0";
+      }
+
+      async function copyLatestResult() {
+        try {
+          if (navigator.clipboard && window.isSecureContext) {
+            await navigator.clipboard.writeText(latestResultText);
+            copyStatus.textContent = "Result copied to clipboard.";
+            return;
+          }
+
+          const temp = document.createElement("textarea");
+          temp.value = latestResultText;
+          temp.setAttribute("readonly", "true");
+          temp.style.position = "fixed";
+          temp.style.left = "-9999px";
+          document.body.appendChild(temp);
+          temp.select();
+          const ok = document.execCommand("copy");
+          document.body.removeChild(temp);
+          copyStatus.textContent = ok ? "Result copied to clipboard." : "Copy is not supported in this browser.";
+        } catch (error) {
+          copyStatus.textContent = "Copy failed. You can manually select and copy the result.";
+        }
+      }
+
+      function updateCharCount() {
+        charCount.textContent = String(offerText.value.length);
+      }
+
+      function setupFilters() {
+        const buttons = document.querySelectorAll(".filter-btn");
+        const items = document.querySelectorAll(".scam-item");
+
+        buttons.forEach((button) => {
+          button.addEventListener("click", () => {
+            const filter = button.getAttribute("data-filter") || "all";
+
+            buttons.forEach((btn) => {
+              btn.setAttribute("aria-pressed", btn === button ? "true" : "false");
+            });
+
+            items.forEach((item) => {
+              const category = item.getAttribute("data-category");
+              item.hidden = !(filter === "all" || category === filter);
+            });
+          });
+        });
+      }
+
+      function setup() {
+        setYear();
+        setupFilters();
+
+        offerText.addEventListener("input", updateCharCount);
+        form.addEventListener("submit", analyzeOffer);
+        form.addEventListener("reset", () => {
+          window.setTimeout(resetResult, 0);
+        });
+
+        copyResult.addEventListener("click", copyLatestResult);
+        printResult.addEventListener("click", () => {
+          window.print();
+        });
+      }
+
+      setup();
+    })();
+  </script>
+</body>
+</html>
